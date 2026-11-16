@@ -8,6 +8,8 @@ import { useSite } from "@/components/SiteProvider";
 
 const studies: {
   name: string;
+  field: string;
+  site: string;
   summary: string;
   href?: string;
   span: string;
@@ -15,6 +17,8 @@ const studies: {
 }[] = [
   {
     name: "Camora",
+    field: "Live events",
+    site: "camora.online",
     summary:
       "Real-time mobile media-sharing and discovery ecosystem for live events. People in the room can share and find media while the event is happening.",
     href: "https://camora.online",
@@ -23,6 +27,8 @@ const studies: {
   },
   {
     name: "Workmen",
+    field: "Services",
+    site: "No public site yet",
     summary:
       "High-converting service platform replacing outdated templates. The interface is built around a clearer path from the visit to an enquiry.",
     span: "md:col-span-5",
@@ -30,6 +36,8 @@ const studies: {
   },
   {
     name: "Elevate Co",
+    field: "B2B web",
+    site: "elevatebrandco.online",
     summary:
       "Scalable corporate web experience engineered for B2B lead capture. A commercial visitor can read the offer and reach the team without a template in the way.",
     href: "https://elevatebrandco.online",
@@ -38,6 +46,8 @@ const studies: {
   },
   {
     name: "Chef D",
+    field: "Hospitality",
+    site: "chefdidenko.com",
     summary:
       "Responsive, mobile-first hospitality website optimized for direct orders. Guests reach the kitchen’s own ordering path from the phone.",
     href: "https://chefdidenko.com",
@@ -57,6 +67,9 @@ export default function CaseStudies() {
         <h2 className="mt-3 max-w-3xl text-3xl font-extrabold tracking-tight md:text-5xl">
           Recent platforms, built for the business in front of them.
         </h2>
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#3d4654]">
+          Camora, Elevate Co, and Chef D link to the live sites. Workmen does not have a public URL, so that case opens a project conversation.
+        </p>
         <motion.div {...reveal.container} className="mt-10 grid gap-4 md:grid-cols-12">
           {studies.map((study) => (
             <motion.article
@@ -66,9 +79,13 @@ export default function CaseStudies() {
             >
               <div className="h-64 border-b border-black/5 bg-[#0D1117]">{study.visual}</div>
               <div className="p-6">
-                <p className="text-xs font-semibold tracking-[0.16em] text-[#2563EB] uppercase">
-                  {study.name}
-                </p>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-xs font-semibold tracking-[0.16em] text-[#2563EB] uppercase">
+                    {study.field}
+                  </p>
+                  <p className="text-xs text-[#5c6570]">{study.site}</p>
+                </div>
+                <h3 className="mt-3 text-2xl font-extrabold tracking-tight">{study.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-[#3d4654]">{study.summary}</p>
                 {study.href ? (
                   <a

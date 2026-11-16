@@ -23,7 +23,7 @@ export default function Hero() {
     <section id="top" className="relative overflow-hidden bg-[#090A0F] text-white">
       <div className="hero-glow pointer-events-none absolute inset-0" />
       <div className="hero-grid pointer-events-none absolute inset-0" />
-      <div className="hero-horizon pointer-events-none absolute -top-56 h-[380px]" />
+      <div className="hero-horizon pointer-events-none absolute -top-64 h-[320px]" />
       <div className="hero-orb pointer-events-none absolute top-[12%] -left-16 h-64 w-64 rounded-full bg-[#0284C7]/30 blur-3xl" />
       <div className="hero-orb hero-orb-delay pointer-events-none absolute right-[-8%] bottom-[8%] h-72 w-72 rounded-full bg-[#6366f1]/25 blur-3xl" />
       <div className="relative mx-auto grid max-w-[1160px] items-end gap-12 px-5 py-20 md:px-8 md:py-28 lg:grid-cols-[1.25fr_0.75fr]">
@@ -64,6 +64,21 @@ export default function Hero() {
               Hire Senior Talent
             </button>
           </motion.div>
+          <motion.ul
+            {...enter(0.32)}
+            className="motion-reveal mt-8 grid max-w-xl grid-cols-3 gap-3 border-t border-white/10 pt-6 text-left"
+          >
+            {[
+              ["Web", "Sites built for enquiries"],
+              ["Product", "Software and mobile"],
+              ["Talent", "Senior squads, 48–72h"],
+            ].map(([label, note]) => (
+              <li key={label}>
+                <p className="text-sm font-bold">{label}</p>
+                <p className="mt-1 text-xs leading-relaxed text-white/55">{note}</p>
+              </li>
+            ))}
+          </motion.ul>
         </div>
 
         <motion.aside
@@ -74,17 +89,20 @@ export default function Hero() {
             Delivery
           </p>
           <dl className="mt-5 grid gap-5">
-            <div>
+            <div className="border-b border-white/10 pb-4">
               <dt className="text-sm text-white/55">North America hub</dt>
               <dd className="mt-1 text-lg font-bold tracking-tight">Winnipeg, Canada</dd>
+              <dd className="mt-1 text-xs text-white/50">Strategy, accounts, and product architecture.</dd>
             </div>
-            <div>
+            <div className="border-b border-white/10 pb-4">
               <dt className="text-sm text-white/55">Engineering hub</dt>
               <dd className="mt-1 text-lg font-bold tracking-tight">Lagos, Nigeria</dd>
+              <dd className="mt-1 text-xs text-white/50">Senior full-stack, frontend, backend, and mobile.</dd>
             </div>
             <div>
               <dt className="text-sm text-white/55">Senior placement</dt>
               <dd className="mt-1 text-lg font-bold tracking-tight">48–72 hours</dd>
+              <dd className="mt-1 text-xs text-white/50">Overlap with US and Canadian working hours.</dd>
             </div>
           </dl>
         </motion.aside>
