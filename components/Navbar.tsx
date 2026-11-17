@@ -43,7 +43,7 @@ export default function Navbar() {
           : "border-black/5 bg-[#FAFAFA]/75"
       }`}
     >
-      <div className="mx-auto flex h-[76px] max-w-[1160px] items-center justify-between gap-4 px-5 md:px-8">
+      <div className="site-shell flex h-[76px] items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-2.5" onClick={close}>
           <Mark />
           <span className="leading-tight">
@@ -52,7 +52,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-5 xl:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-7 xl:flex" aria-label="Primary">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -92,8 +92,8 @@ export default function Navbar() {
       </div>
 
       {open ? (
-        <nav className="border-t border-black/5 bg-white px-5 py-4 xl:hidden" aria-label="Mobile">
-          <div className="mx-auto grid max-w-[1160px] gap-1">
+        <nav className="border-t border-black/5 bg-white py-4 xl:hidden" aria-label="Mobile">
+          <div className="site-shell grid gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}

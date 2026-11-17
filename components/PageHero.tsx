@@ -10,10 +10,10 @@ export default function PageHero({
   lede: string;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-white/10 bg-[#090A0F] text-white">
+    <section className="relative flex min-h-[calc(100svh-4.75rem)] items-end overflow-hidden border-b border-white/10 bg-[#090A0F] text-white">
       <div className="hero-glow pointer-events-none absolute inset-0 opacity-80" />
       <div className="hero-grid pointer-events-none absolute inset-0" />
-      <div className="relative mx-auto max-w-[1160px] px-5 py-16 md:px-8 md:py-24">
+      <div className="site-shell relative w-full py-16 md:py-20">
         <p className="text-xs font-semibold tracking-[0.16em] text-white/55 uppercase">
           <Link href="/" className="hover:text-white">
             Home

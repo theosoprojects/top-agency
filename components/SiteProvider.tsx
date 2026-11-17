@@ -71,7 +71,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
   return (
     <SiteContext.Provider value={value}>
       <MotionConfig reducedMotion="user">
-        {children}
+        <div className="flex min-h-svh flex-col [&>main]:flex-1">{children}</div>
         <ContactModal />
         <CookieBanner />
       </MotionConfig>

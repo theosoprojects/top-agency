@@ -27,8 +27,8 @@ export default function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-28">
-      <div className="mx-auto grid max-w-[1160px] gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+    <section id="faq" className="scroll-mt-24 py-20 md:py-28">
+      <div className="site-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-[#2563EB] uppercase">FAQ</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-5xl">

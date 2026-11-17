@@ -30,9 +30,9 @@ export default function GlobalHubs() {
   const reveal = useReveal();
 
   return (
-    <section id="talent" className="relative scroll-mt-24 overflow-hidden bg-[#0D1117] px-5 py-20 text-white md:px-8 md:py-28">
+    <section id="talent" className="relative scroll-mt-24 overflow-hidden bg-[#0D1117] py-20 text-white md:py-28">
       <div className="hero-glow pointer-events-none absolute inset-0 opacity-70" />
-      <div className="relative mx-auto max-w-[1160px]">
+      <div className="site-shell relative">
         <p className="text-xs font-semibold tracking-[0.18em] text-[#93c5fd] uppercase">
           Global talent
         </p>

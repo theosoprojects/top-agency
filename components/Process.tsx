@@ -34,8 +34,8 @@ export default function Process() {
   const reveal = useReveal(0.06);
 
   return (
-    <section id="process" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-28">
-      <div className="mx-auto max-w-[1160px]">
+    <section id="process" className="scroll-mt-24 py-20 md:py-28">
+      <div className="site-shell">
         <p className="text-xs font-semibold tracking-[0.18em] text-[#2563EB] uppercase">Process</p>
         <h2 className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight md:text-5xl">
           A short path from the first call to a live sprint.

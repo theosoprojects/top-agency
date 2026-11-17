@@ -11,8 +11,8 @@ const people = [
 
 export default function Team() {
   return (
-    <section id="about" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-28">
-      <div className="mx-auto grid max-w-[1160px] gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+    <section id="about" className="scroll-mt-24 py-20 md:py-28">
+      <div className="site-shell grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal className="rounded-3xl bg-[#090A0F] p-8 text-white md:p-10">
           <p className="text-xs font-semibold tracking-[0.18em] text-[#93c5fd] uppercase">
             From the Managing Director

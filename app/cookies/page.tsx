@@ -10,7 +10,8 @@ export default function CookiesPage() {
   return (
     <>
       <Navbar />
-      <main className="mx-auto max-w-3xl px-5 py-16 md:px-8">
+      <main className="site-shell py-16 md:py-24">
+        <div className="max-w-3xl">
         <p className="text-xs font-semibold tracking-[0.18em] text-[#2563EB] uppercase">Legal</p>
         <h1 className="mt-3 text-4xl font-bold tracking-tight">Cookie Policy</h1>
         <div className="mt-6 grid gap-4 text-sm leading-relaxed text-slate-600">
@@ -29,6 +30,7 @@ export default function CookiesPage() {
               Read the privacy policy
             </Link>
           </p>
+        </div>
         </div>
       </main>
       <Footer />

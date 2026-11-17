@@ -16,7 +16,7 @@ export default function CookieBanner() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: reduce ? 0 : 0.45, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="mx-auto flex max-w-[1160px] flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-lg md:flex-row md:items-center md:justify-between md:px-5">
+      <div className="mx-auto flex w-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-lg md:flex-row md:items-center md:justify-between md:px-5">
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600">
           TOP Agency stores one preference in this browser so this notice stays
           dismissed. We do not run analytics cookies.{" "}

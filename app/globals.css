@@ -18,6 +18,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.site-shell {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 3vw, 4.5rem);
+}
+
 .site-atmosphere {
   position: fixed;
   inset: 0;

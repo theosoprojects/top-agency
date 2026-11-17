@@ -31,7 +31,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#090A0F] text-white">
-      <div className="mx-auto max-w-[1160px] px-5 py-20 md:px-8 md:py-28">
+      <div className="site-shell py-20 md:py-28">
         <p className="text-xs font-semibold tracking-[0.18em] text-[#93c5fd] uppercase">Next step</p>
         <h2 className="mt-4 max-w-3xl text-3xl font-extrabold tracking-tight md:text-5xl">
           Ready to accelerate your digital roadmap? Let&apos;s build together.
@@ -45,7 +45,7 @@ export default function Footer() {
         </button>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto grid max-w-[1160px] gap-10 px-5 py-12 md:grid-cols-4 md:px-8">
+        <div className="site-shell grid gap-10 py-12 md:grid-cols-4">
           {columns.map((column) => (
             <div key={column.title}>
               <p className="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">{column.title}</p>
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1160px] flex-col gap-4 px-5 py-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between md:px-8">
+        <div className="site-shell flex flex-col gap-4 py-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
           <Link href="/" className="flex items-center gap-2 text-white">
             <Mark light />
             <span className="font-extrabold tracking-tight">TOP Agency</span>

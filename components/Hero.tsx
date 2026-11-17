@@ -20,13 +20,13 @@ export default function Hero() {
   }
 
   return (
-    <section id="top" className="relative overflow-hidden bg-[#090A0F] text-white">
+    <section id="top" className="relative flex min-h-[calc(100svh-4.75rem)] items-center overflow-hidden bg-[#090A0F] text-white">
       <div className="hero-glow pointer-events-none absolute inset-0" />
       <div className="hero-grid pointer-events-none absolute inset-0" />
       <div className="hero-horizon pointer-events-none absolute -top-64 h-[320px]" />
       <div className="hero-orb pointer-events-none absolute top-[12%] -left-16 h-64 w-64 rounded-full bg-[#0284C7]/30 blur-3xl" />
       <div className="hero-orb hero-orb-delay pointer-events-none absolute right-[-8%] bottom-[8%] h-72 w-72 rounded-full bg-[#6366f1]/25 blur-3xl" />
-      <div className="relative mx-auto grid max-w-[1160px] items-end gap-12 px-5 py-20 md:px-8 md:py-28 lg:grid-cols-[1.25fr_0.75fr]">
+      <div className="site-shell relative grid w-full items-center gap-12 py-16 lg:grid-cols-[minmax(0,1.25fr)_minmax(18rem,0.75fr)]">
         <div>
           <motion.p
             {...enter(0)}
@@ -36,13 +36,13 @@ export default function Hero() {
           </motion.p>
           <motion.h1
             {...enter(0.08)}
-            className="motion-reveal mt-6 max-w-4xl text-[clamp(2.5rem,5.6vw,4.8rem)] leading-[1.02] font-extrabold tracking-tight"
+            className="motion-reveal mt-6 text-[clamp(2.6rem,4.6vw,5.25rem)] leading-[1.02] font-extrabold tracking-tight"
           >
             We engineer high-performance digital infrastructure & elite remote teams.
           </motion.h1>
           <motion.p
             {...enter(0.16)}
-            className="motion-reveal mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg"
+            className="motion-reveal mt-6 max-w-3xl text-base leading-relaxed text-white/70 md:text-lg"
           >
             Custom websites, scalable mobile & web platforms, and pre-vetted senior
             remote developers—built to turn visitors into measurable revenue and
@@ -66,7 +66,7 @@ export default function Hero() {
           </motion.div>
           <motion.ul
             {...enter(0.32)}
-            className="motion-reveal mt-8 grid max-w-xl grid-cols-3 gap-3 border-t border-white/10 pt-6 text-left"
+            className="motion-reveal mt-8 grid grid-cols-3 gap-6 border-t border-white/10 pt-6 text-left"
           >
             {[
               ["Web", "Sites built for enquiries"],

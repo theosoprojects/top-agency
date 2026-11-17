@@ -56,8 +56,8 @@ export default function Services() {
   const { openConsult } = useSite();
 
   return (
-    <section id="services" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-28">
-      <div className="mx-auto max-w-[1160px]">
+    <section id="services" className="scroll-mt-24 py-20 md:py-28">
+      <div className="site-shell">
         <p className="text-xs font-semibold tracking-[0.18em] text-[#2563EB] uppercase">Services</p>
         <div className="mt-3 flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <h2 className="max-w-3xl text-3xl font-extrabold tracking-tight md:text-5xl">
